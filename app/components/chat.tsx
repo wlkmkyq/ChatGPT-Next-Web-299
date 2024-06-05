@@ -1417,7 +1417,7 @@ function _Chat() {
                       onContextMenu={(e) => onRightClick(e, message)}
                       onDoubleClickCapture={() => {
                         if (!isMobileScreen) return;
-                        setUserInput(getMessageTextContent(message));
+                        //setUserInput(getMessageTextContent(message));
                       }}
                       fontSize={fontSize}
                       parentRef={scrollRef}
