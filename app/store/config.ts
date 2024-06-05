@@ -47,14 +47,14 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "google-gemini-1.5-pro-001" as ModelType,
     temperature: 0.9,
     top_p: 1,
     max_tokens: 4000,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: false,
-    historyMessageCount: 16,
+    historyMessageCount: 256,
     compressMessageLengthThreshold: 1000,
     enableInjectSystemPrompts: false,
     template: config?.template ?? DEFAULT_INPUT_TEMPLATE,
