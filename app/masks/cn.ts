@@ -2,7 +2,6 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
   {
-    avatar: "1f513",
     name: "网文写手",
     context: [
       {
@@ -20,7 +19,7 @@ export const CN_MASKS: BuiltinMask[] = [
       presence_penalty: 0,
       frequency_penalty: 0,
       sendMemory: false,
-      historyMessageCount: 4,
+      historyMessageCount: 256,
       compressMessageLengthThreshold: 1000,
     },
     lang: "cn",
