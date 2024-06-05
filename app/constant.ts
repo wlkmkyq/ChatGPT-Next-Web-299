@@ -131,6 +131,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 const openaiModels = [
   "gpt-3.5-turbo",
+  "google-gemini-1.5-pro-001"
 ];
 
 const googleModels = [
