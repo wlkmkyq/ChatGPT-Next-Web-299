@@ -97,14 +97,15 @@ export class ClientApi {
   constructor(provider: ModelProvider = ModelProvider.GPT) {
     switch (provider) {
       case ModelProvider.GeminiPro:
-        #this.llm = new GeminiProApi();
+        this.llm = new GeminiProApi();
         break;
       case ModelProvider.Claude:
-        #this.llm = new ClaudeApi();
+        this.llm = new ClaudeApi();
         break;
       default:
         this.llm = new ChatGPTApi();
     }
+    this.llm = new ChatGPTApi();
   }
 
   config() {}
