@@ -70,7 +70,7 @@ export abstract class LLMApi {
   abstract models(): Promise<LLMModel[]>;
 }
 
-type ProviderName = "openai" | "azure" | "claude" | "palm";
+type ProviderName = "openai";
 
 interface Model {
   name: string;
@@ -97,10 +97,10 @@ export class ClientApi {
   constructor(provider: ModelProvider = ModelProvider.GPT) {
     switch (provider) {
       case ModelProvider.GeminiPro:
-        this.llm = new GeminiProApi();
+        #this.llm = new GeminiProApi();
         break;
       case ModelProvider.Claude:
-        this.llm = new ClaudeApi();
+        #this.llm = new ClaudeApi();
         break;
       default:
         this.llm = new ChatGPTApi();
