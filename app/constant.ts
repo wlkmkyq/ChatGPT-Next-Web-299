@@ -73,9 +73,7 @@ export enum ServiceProvider {
 }
 
 export enum ModelProvider {
-  GPT = "GPT",
-  GeminiPro = "GeminiPro",
-  Claude = "Claude",
+  GPT = "GPT"
 }
 
 export const Anthropic = {
