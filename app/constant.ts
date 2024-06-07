@@ -139,19 +139,11 @@ const googleModels = [
 ];
 
 const anthropicModels = [
-  "claude-instant-1.2",
+  "claude-1",
 ];
 
 export const DEFAULT_MODELS = [
-  ...openaiModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  })),
+
   ...googleModels.map((name) => ({
     name,
     available: true,
@@ -170,6 +162,16 @@ export const DEFAULT_MODELS = [
       providerType: "anthropic",
     },
   })),
+  ...openaiModels.map((name) => ({
+    name,
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "OpenAI",
+      providerType: "openai",
+    },
+  })),
+
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
