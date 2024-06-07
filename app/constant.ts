@@ -143,25 +143,6 @@ const anthropicModels = [
 ];
 
 export const DEFAULT_MODELS = [
-
-  ...googleModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  })),
-  ...anthropicModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  })),
   ...openaiModels.map((name) => ({
     name,
     available: true,
