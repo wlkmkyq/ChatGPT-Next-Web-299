@@ -130,8 +130,10 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
-  "gpt-3.5-turbo",
-  "google-gemini-1.5-pro-001"
+  "direct-gpt-4o-mini-2024-07-18",
+  "google-gemini-1.5-pro-001",
+  "direct-gemma-2",
+  "beckrock-claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [
