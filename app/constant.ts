@@ -134,7 +134,7 @@ const openaiModels = [
   "google-gemini-1.5-pro-002",
   "google-gemini-1.5-pro-001",
   "direct-gemma-2",
-  "beckrock-claude-3-5-sonnet-20240620",
+  "bedrock-claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [
