@@ -468,6 +468,7 @@ export function ChatActions(props: {
 
   useEffect(() => {
     const show = isVisionModel(currentModel);
+    show = false;
     setShowUploadImage(show);
     if (!show) {
       props.setAttachImages([]);
