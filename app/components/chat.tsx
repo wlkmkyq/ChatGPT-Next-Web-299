@@ -467,7 +467,7 @@ export function ChatActions(props: {
   const [showUploadImage, setShowUploadImage] = useState(false);
 
   useEffect(() => {
-    const show = isVisionModel(currentModel);
+    show = isVisionModel(currentModel);
     show = false;
     setShowUploadImage(show);
     if (!show) {
