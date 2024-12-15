@@ -136,7 +136,8 @@ const openaiModels = [
   "bedrock-claude-3-5-sonnet-20241022",
   "direct-QwQ",
   "vertexgpt-mistral-large-2411",
-  "general-gemini-2.0-flash-exp"
+  "general-gemini-2.0-flash-exp",
+  "google-gemini-exp-1206"
 ];
 
 const googleModels = [
