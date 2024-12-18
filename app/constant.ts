@@ -137,7 +137,9 @@ const openaiModels = [
   "direct-QwQ",
   "vertexgpt-mistral-large-2411",
   "general-gemini-2.0-flash-exp",
-  "google-gemini-exp-1206"
+  "google-gemini-exp-1206",
+  "direct-llama3",
+  "direct-llama3T"
 ];
 
 const googleModels = [
