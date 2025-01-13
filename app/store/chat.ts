@@ -560,9 +560,9 @@ export const useChatStore = createPersistStore(
         const messages = session.messages;
 
         // should summarize topic after chating more than 50 words
-        const SUMMARIZE_MIN_LEN = 50;
+        const SUMMARIZE_MIN_LEN = 1;
         if (
-          config.enableAutoGenerateTitle &&
+          config.enableAutoGenerateTitle && false &&
           session.topic === DEFAULT_TOPIC &&
           countMessages(messages) >= SUMMARIZE_MIN_LEN
         ) {
