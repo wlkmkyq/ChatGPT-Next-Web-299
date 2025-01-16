@@ -138,7 +138,8 @@ const openaiModels = [
   "google-gemini-2.0-flash-thinking-exp-1219",
   "google-gemini-exp-1206",
   "direct-llama33",
-  "direct-llama33T"
+  "direct-llama33T",
+  "azure-gpt-4o-mini"
 ];
 
 const googleModels = [
