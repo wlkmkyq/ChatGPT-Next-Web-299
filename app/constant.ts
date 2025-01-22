@@ -139,7 +139,8 @@ const openaiModels = [
   "google-gemini-exp-1206",
   "direct-llama33",
   "direct-llama33T",
-  "azure-gpt-4o-mini"
+  "azure-gpt-4o-mini",
+  "direct-deepseek-r1"
 ];
 
 const googleModels = [
