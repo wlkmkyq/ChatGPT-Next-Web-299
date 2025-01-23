@@ -140,7 +140,8 @@ const openaiModels = [
   "direct-llama33",
   "direct-llama33T",
   "azure-gpt-4o-mini",
-  "direct-deepseek-r1"
+  "direct-deepseek-r1",
+  "direct-zijie03"
 ];
 
 const googleModels = [
