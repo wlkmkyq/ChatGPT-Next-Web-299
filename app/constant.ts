@@ -134,7 +134,6 @@ const openaiModels = [
   "bedrock-claude-3-5-sonnet-20241022",
   "direct-QwQ",
   "vertexgpt-mistral-large-2411",
-  "google-gemini-exp-1206",
   "direct-llama33",
   "direct-llama33T",
   "azure-gpt-4o-mini",
