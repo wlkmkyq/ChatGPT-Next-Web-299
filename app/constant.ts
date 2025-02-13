@@ -130,7 +130,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
-  "google-gemini-1.5-pro-002",
+  "general-gemini-1.5-pro-002",
   "bedrock-claude-3-5-sonnet-20241022",
   "direct-QwQ",
   "vertexgpt-mistral-large-2411",
