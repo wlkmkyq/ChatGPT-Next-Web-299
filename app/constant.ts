@@ -130,15 +130,22 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
-  "general-gemini-1.5-pro-002",
-  "bedrock-claude-3-5-sonnet-20241022",
-  "direct-QwQ",
   "vertexgpt-mistral-large-2411",
-  "direct-llama33",
-  "direct-llama33T",
+  "bedrock-claude-3-5-sonnet-20241022",
+  "bedrock-claude-3-7-sonnet-20241022",
+  "general-claude-opus",
+  "bedrock-claude-2.1",
+  "bedrock-claude-2.0",
   "azure-gpt-4o-mini",
+  "azure-o3-mini",
   "direct-deepseek-r1",
+  "direct-deepseek-v3-0324",
+  "direct-deepseek-v3",
   "direct-zijie03",
+  "direct-zijie02",
+  "general-gemini-2.5-pro-exp-03-25",
+  "general-gemini-2.0-pro-exp-02-05",
+  "general-gemini-1.5-pro-002",
   "general-gemini-2.0-flash-001"
 ];
 
