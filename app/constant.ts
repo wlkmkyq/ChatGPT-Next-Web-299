@@ -143,6 +143,7 @@ const openaiModels = [
   "direct-deepseek-v3",
   "direct-zijie03",
   "direct-zijie02",
+  "azure-gpt-4.1",
   "general-gemini-2.5-pro-exp-03-25",
   "general-gemini-2.0-pro-exp-02-05",
   "general-gemini-1.5-pro-002",
