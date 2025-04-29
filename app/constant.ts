@@ -147,7 +147,9 @@ const openaiModels = [
   "general-gemini-2.5-pro-exp-03-25",
   "general-gemini-2.0-pro-exp-02-05",
   "general-gemini-1.5-pro-002",
-  "general-gemini-2.0-flash-001"
+  "general-gemini-2.0-flash-001",
+  "direct-Qwen3-235B-A22B",
+  "direct-Qwen3-32B"
 ];
 
 const googleModels = [
