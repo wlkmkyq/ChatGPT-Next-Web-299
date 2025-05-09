@@ -125,13 +125,13 @@ export class ChatGPTApi implements LLMApi {
       frequency_penalty: modelConfig.frequency_penalty,
       top_p: modelConfig.top_p,
       //max_tokens: modelConfig.max_tokens
-      max_tokens: Math.min(modelConfig.max_tokens, 4000),
+      max_tokens: Math.min(modelConfig.max_tokens, 8000),
       // Please do not ask me why not send max_tokens, no reason, this param is just shit, I dont want to explain anymore.
     };
 
     // add max_tokens to vision model
     if (visionModel && modelConfig.model.includes("preview")) {
-      requestPayload["max_tokens"] = Math.min(modelConfig.max_tokens, 4000);
+      requestPayload["max_tokens"] = Math.min(modelConfig.max_tokens, 8000);
     }
 
     console.log("[Request] openai payload: ", requestPayload);
