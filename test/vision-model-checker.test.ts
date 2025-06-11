@@ -2,15 +2,6 @@ import { jest } from "@jest/globals";
 import { isVisionModel } from "../app/utils";
 
 describe("isVisionModel", () => {
-  const originalEnv = process.env;
-
-  beforeEach(() => {
-    jest.resetModules();
-    process.env = { ...originalEnv };
-  });
-
-  afterEach(() => {
-    process.env = originalEnv;
   });
 
   test("should identify vision models using regex patterns", () => {
