@@ -469,19 +469,10 @@ export const VISION_MODEL_REGEXES = [
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
 
 const openaiModels = [
-  // As of July 2024, gpt-4o-mini should be used in place of gpt-3.5-turbo,
-  // as it is cheaper, more capable, multimodal, and just as fast. gpt-3.5-turbo is still available for use in the API.
-  "google-gemini-1.5-pro-002",
   "bedrock-claude-3-5-sonnet-20241022",
-  "direct-QwQ",
   "vertexgpt-mistral-large-2411",
-  "general-gemini-2.0-flash-exp",
-  "google-gemini-2.0-flash-thinking-exp-1219",
-  "google-gemini-exp-1206",
-  "direct-llama33",
-  "direct-llama33T",
-  "azure-gpt-4o-mini",
-  "direct-deepseek-r1",
+  "general-gemini-2.5-flash-preview-05-20",
+  "general-gemini-2.5-pro-preview-05-06",
   "direct-zijie03"
 ];
 
