@@ -598,10 +598,7 @@ export const useChatStore = createPersistStore(
         const longTermMemoryStartIndex = session.lastSummarizeIndex;
 
         // short term memory
-        const shortTermMemoryStartIndex = Math.max(
-          0,
-          totalMessageCount - modelConfig.historyMessageCount,
-        );
+        const shortTermMemoryStartIndex = 0;
 
         // lets concat send messages, including 4 parts:
         // 0. system prompt: to get close to OpenAI Web ChatGPT
@@ -692,7 +689,7 @@ export const useChatStore = createPersistStore(
         ) {
           const startIndex = Math.max(
             0,
-            messages.length - modelConfig.historyMessageCount,
+            0,
           );
           const topicMessages = messages
             .slice(
@@ -736,9 +733,7 @@ export const useChatStore = createPersistStore(
 
         if (historyMsgLength > (modelConfig?.max_tokens || 4000)) {
           const n = toBeSummarizedMsgs.length;
-          toBeSummarizedMsgs = toBeSummarizedMsgs.slice(
-            Math.max(0, n - modelConfig.historyMessageCount),
-          );
+          toBeSummarizedMsgs = 0;
         }
         const memoryPrompt = get().getMemoryPrompt();
         if (memoryPrompt) {
@@ -876,7 +871,7 @@ export const useChatStore = createPersistStore(
           newSession.topic = oldSession.topic;
           newSession.messages = [...oldSession.messages];
           newSession.mask.modelConfig.sendMemory = true;
-          newSession.mask.modelConfig.historyMessageCount = 4;
+          newSession.mask.modelConfig.historyMessageCount = 40;
           newSession.mask.modelConfig.compressMessageLengthThreshold = 1000;
           newState.sessions.push(newSession);
         }
