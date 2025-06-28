@@ -733,7 +733,7 @@ export const useChatStore = createPersistStore(
 
         if (historyMsgLength > (modelConfig?.max_tokens || 4000)) {
           const n = toBeSummarizedMsgs.length;
-          toBeSummarizedMsgs = 0;
+          toBeSummarizedMsgs = toBeSummarizedMsgs.slice(0,);
         }
         const memoryPrompt = get().getMemoryPrompt();
         if (memoryPrompt) {
