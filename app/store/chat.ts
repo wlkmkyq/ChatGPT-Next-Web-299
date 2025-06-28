@@ -617,7 +617,7 @@ export const useChatStore = createPersistStore(
         const reversedRecentMessages = [];
         for (
           let i = totalMessageCount - 1, tokenCount = 0;
-          i >= contextStartIndex && tokenCount < maxTokenThreshold;
+          i >= contextStartIndex;
           i -= 1
         ) {
           const msg = messages[i];
