@@ -729,8 +729,8 @@ export const useChatStore = createPersistStore(
           .filter((msg) => !msg.isError)
           .slice(summarizeIndex);
 
-        const historyMsgLength = countMessages(toBeSummarizedMsgs);
-        historyMsgLength = 100;
+        //const historyMsgLength = countMessages(toBeSummarizedMsgs);
+        const historyMsgLength = 100;
 
         if (historyMsgLength > (modelConfig?.max_tokens || 4000)) {
           const n = toBeSummarizedMsgs.length;
