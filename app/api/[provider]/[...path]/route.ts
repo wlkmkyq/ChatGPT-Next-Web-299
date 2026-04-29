@@ -23,33 +23,8 @@ async function handle(
   const apiPath = `/api/${params.provider}`;
   console.log(`[${params.provider} Route] params `, params);
   switch (apiPath) {
-    case ApiPath.Azure:
-      return azureHandler(req, { params });
-    case ApiPath.Google:
-      return googleHandler(req, { params });
     case ApiPath.Anthropic:
       return anthropicHandler(req, { params });
-    case ApiPath.Baidu:
-      return baiduHandler(req, { params });
-    case ApiPath.ByteDance:
-      return bytedanceHandler(req, { params });
-    case ApiPath.Alibaba:
-      return alibabaHandler(req, { params });
-    // case ApiPath.Tencent: using "/api/tencent"
-    case ApiPath.Moonshot:
-      return moonshotHandler(req, { params });
-    case ApiPath.Stability:
-      return stabilityHandler(req, { params });
-    case ApiPath.Iflytek:
-      return iflytekHandler(req, { params });
-    case ApiPath.DeepSeek:
-      return deepseekHandler(req, { params });
-    case ApiPath.XAI:
-      return xaiHandler(req, { params });
-    case ApiPath.ChatGLM:
-      return chatglmHandler(req, { params });
-    case ApiPath.SiliconFlow:
-      return siliconflowHandler(req, { params });
     case ApiPath.OpenAI:
       return openaiHandler(req, { params });
     default:
