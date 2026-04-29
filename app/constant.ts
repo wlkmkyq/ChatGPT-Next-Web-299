@@ -1,6 +1,7 @@
-export const OWNER = "Yidadaa";
+export const OWNER = "ChatGPTNextWeb";
 export const REPO = "ChatGPT-Next-Web";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
+export const PLUGINS_REPO_URL = `https://github.com/${OWNER}/NextChat-Awesome-Plugins`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const RELEASE_URL = `${REPO_URL}/releases`;
@@ -53,13 +54,34 @@ export enum Path {
   Settings = "/settings",
   NewChat = "/new-chat",
   Masks = "/masks",
+  Plugins = "/plugins",
   Auth = "/auth",
+  Sd = "/sd",
+  SdNew = "/sd-new",
+  Artifacts = "/artifacts",
+  SearchChat = "/search-chat",
+  McpMarket = "/mcp-market",
 }
 
 export enum ApiPath {
   Cors = "",
+  Azure = "/api/azure",
   OpenAI = "/api/openai",
   Anthropic = "/api/anthropic",
+  Google = "/api/google",
+  Baidu = "/api/baidu",
+  ByteDance = "/api/bytedance",
+  Alibaba = "/api/alibaba",
+  Tencent = "/api/tencent",
+  Moonshot = "/api/moonshot",
+  Iflytek = "/api/iflytek",
+  Stability = "/api/stability",
+  Artifacts = "/api/artifacts",
+  XAI = "/api/xai",
+  ChatGLM = "/api/chatglm",
+  DeepSeek = "/api/deepseek",
+  SiliconFlow = "/api/siliconflow",
+  "302.AI" = "/api/302ai",
 }
 
 export enum SlotID {
@@ -120,19 +142,29 @@ export const Anthropic = {
 
 export const OpenaiPath = {
   ChatPath: "v1/chat/completions",
+  SpeechPath: "v1/audio/speech",
+  ImagePath: "v1/images/generations",
   UsagePath: "dashboard/billing/usage",
   SubsPath: "dashboard/billing/subscription",
   ListModelPath: "v1/models",
 };
 
 export const Azure = {
-  ExampleEndpoint: "https://{resource-url}/openai/deployments/{deploy-id}",
+  ChatPath: (deployName: string, apiVersion: string) =>
+    `deployments/${deployName}/chat/completions?api-version=${apiVersion}`,
+  // https://<your_resource_name>.openai.azure.com/openai/deployments/<your_deployment_name>/images/generations?api-version=<api_version>
+  ImagePath: (deployName: string, apiVersion: string) =>
+    `deployments/${deployName}/images/generations?api-version=${apiVersion}`,
+  ExampleEndpoint: "https://{resource-url}/openai",
 };
+
 
 export const Google = {
   ExampleEndpoint: "https://generativelanguage.googleapis.com/",
-  ChatPath: (modelName: string) => `v1beta/models/${modelName}:generateContent`,
+  ChatPath: (modelName: string) =>
+    `v1beta/models/${modelName}:streamGenerateContent`,
 };
+
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 // export const DEFAULT_SYSTEM_TEMPLATE = `
@@ -188,6 +220,18 @@ export const DEFAULT_MODELS = [
 
 ] as const;
 
+
+
+export const DEFAULT_TTS_ENGINE = "OpenAI-TTS";
+export const DEFAULT_TTS_ENGINES = ["OpenAI-TTS", "Edge-TTS"];
+export const DEFAULT_TTS_MODEL = "tts-1";
+export const DEFAULT_TTS_VOICE = "alloy";
+export const DEFAULT_TTS_MODELS = ["tts-1", "tts-1-hd"];
+export const DEFAULT_TTS_VOICES = ["alloy"];
+
+
+export const VISION_MODEL_REGEXES = [];
+
 export const CHAT_PAGE_SIZE = 15;
 export const MAX_RENDER_MSG_COUNT = 45;
 
@@ -195,3 +239,9 @@ export const MAX_RENDER_MSG_COUNT = 45;
 export const internalAllowedWebDavEndpoints = [
   "https://dev.zixunhai.com:81",
 ];
+export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
+
+export const DEFAULT_GA_ID = "JHFkk";
+
+export const SAAS_CHAT_URL = "https://www.zixunhai.com";
+export const SAAS_CHAT_UTM_URL = "https://www.zixunhai.com";
