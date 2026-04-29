@@ -6,4 +6,5 @@ export async function handle(
   { params }: { params: { path: string[] } },
 ) 
 {
+	return openaiHandler(req, { params });
 }
