@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-
+import { handle as openaiHandler } from "../../openai";
 async function handle(
   req: NextRequest,
   { params }: { params: { provider: string; path: string[] } },
