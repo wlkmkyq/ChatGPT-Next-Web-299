@@ -12,7 +12,40 @@ export const DEFAULT_API_HOST = "https://api.nextchat.dev";
 export const OPENAI_BASE_URL = "https://api.openai.com";
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
+
+
+
+
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
+
+
+
+export const BAIDU_BASE_URL = "https://aip.baidubce.com";
+export const BAIDU_OATUH_URL = `${BAIDU_BASE_URL}/oauth/2.0/token`;
+
+export const BYTEDANCE_BASE_URL = "https://ark.cn-beijing.volces.com";
+
+export const ALIBABA_BASE_URL = "https://dashscope.aliyuncs.com/api/";
+
+export const TENCENT_BASE_URL = "https://hunyuan.tencentcloudapi.com";
+
+export const MOONSHOT_BASE_URL = "https://api.moonshot.ai";
+export const IFLYTEK_BASE_URL = "https://spark-api-open.xf-yun.com";
+
+export const DEEPSEEK_BASE_URL = "https://api.deepseek.com";
+
+export const XAI_BASE_URL = "https://api.x.ai";
+
+export const CHATGLM_BASE_URL = "https://open.bigmodel.cn";
+
+export const SILICONFLOW_BASE_URL = "https://api.siliconflow.cn";
+
+export const AI302_BASE_URL = "https://api.302.ai";
+
+export const CACHE_URL_PREFIX = "/api/cache";
+export const UPLOAD_URL = `${CACHE_URL_PREFIX}/upload`;
+
+
 
 export enum Path {
   Home = "/",
@@ -130,27 +163,6 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
-  "vertexgpt-mistral-large-2411",
-  "bedrock-claude-3-5-sonnet-20241022",
-  "bedrock-claude-3-7-sonnet-20241022",
-  "general-claude-opus",
-  "bedrock-claude-2.1",
-  "bedrock-claude-2.0",
-  "azure-gpt-4o-mini",
-  "azure-o3-mini",
-  "direct-deepseek-r1",
-  "direct-deepseek-v3-0324",
-  "direct-deepseek-v3",
-  "direct-zijie03",
-  "direct-zijie02",
-  "azure-gpt-4.1",
-  "general-gemini-2.5-pro-exp-03-25",
-  "general-gemini-2.0-pro-exp-02-05",
-  "general-gemini-1.5-pro-002",
-  "general-gemini-2.0-flash-001",
-  "general-gemini-2.5-pro-preview-05-06",
-  "direct-Qwen3-235B-A22B",
-  "direct-Qwen3-32B",
   "general-claude-opus4",
   "general-claude-sonnet4"
 ];
