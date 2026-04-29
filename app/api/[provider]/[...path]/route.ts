@@ -10,8 +10,6 @@ async function handle(
   const apiPath = `/api/${params.provider}`;
   console.log(`[${params.provider} Route] params `, params);
   switch (apiPath) {
-    case ApiPath.Anthropic:
-      return anthropicHandler(req, { params });
     case ApiPath.OpenAI:
       return openaiHandler(req, { params });
     default:
